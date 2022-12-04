@@ -1,0 +1,160 @@
+
+.filters {
+    background: white;
+    margin: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.filters ::placeholder {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.filters input[type='number'], .filters input[type='text'], .filters ::placeholder {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    padding: 2px auto;
+}
+
+.location, .rating, .price, .property-type {
+    /* background-color: blue; */
+    margin: 10px;
+}
+
+.filter-title {
+    padding: 5px;
+    color: rgba(10, 10, 10, 0.453);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.filter-text{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+.filter-text input {
+    width: 100%;
+    all: none;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(10, 10, 10, 0.115);
+}
+
+.slider {
+    color: var(--text-color-secondary);
+}
+
+.price-data {
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price-data input {
+    all: none;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color-secondary);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 2px;
+}
+
+.price-data input:focus {
+    outline: var(--bg-color-tertiary);
+    background-color: none;
+}
+
+.price-data input ::placeholder {
+    padding: 0px 5px;
+}
+
+.property-type-data {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.property-type-data select {
+    padding: 5px;
+    outline: none;
+    border: 1px solid var(--text-color-secondary)
+}
+
+
+.search-btn {
+    /* background-color: blue; */
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.search-btn button {
+    all: none;
+    outline: none;
+    border: none;
+    border: 2px solid var(--text-color-secondary);
+    background-color: var(--text-color-secondary);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.search-btn button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--text-color-secondary);
+}
+
+.filter-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 228, 240);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.filter-icon .filter-down {
+    color: var(--text-color-secondary);
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex: 2 1 1;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .filters {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+}

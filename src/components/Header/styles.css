@@ -1,0 +1,211 @@
+
+.header-container {
+    width: 100%;
+    height: 60px;
+    /* background-color: blue; */
+    display: flex;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.header-left {
+    width: 55%;
+    margin-left: 50px;
+    /* background-color: green; */
+    display: flex;
+    padding: 10px;
+}
+
+.header-left .logo {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-container {
+    /* background-color: blanchedalmond; */
+    padding: 1px 3px;
+}
+
+.logo-icon {
+    color: var(--text-color-secondary);
+    width: 100%;
+    height: 100%;
+
+}
+
+.logo-text {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.header-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-tabs div {
+    font-weight: 530;
+    font-size: 0.95rem;
+    border-radius: 2px;
+    padding: 3px 10px;
+    transition: all 0.3s ease;
+}
+
+.header-tabs div:hover {
+    background-color: var(--bg-color-secondary);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+
+.header-right {
+    width: 45%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.header-right button {
+    all: none;
+    background: none;
+    outline: none;
+    border: none;
+    font-weight: 530;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    color: var(--text-color-secondary);
+    margin: 10px;
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+}
+
+.header-right button:first-of-type {
+    border: 2px solid var(--border-color);
+}
+
+.header-right button:last-of-type {
+    border: 2px solid var(--bg-color);
+    color: var(--text-color-tertiary);
+    background-color: var(--text-color-secondary);
+    /* border: 2px solid var(--border-color); */
+}
+
+.header-right button:first-of-type:hover {
+    cursor: pointer;
+    color: var(--text-color-tertiary);
+    background-color: var(--text-color-secondary);
+}
+
+.header-right button:last-of-type:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color-secondary);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+}
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .hamburger:hover {
+    background-color: #2642af;
+  }
+
+
+  @media screen and (max-width: 1170px)  {
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header-tabs {
+        /* background-color: blue; */
+        /* position: absolute;
+        margin: 20px auto;
+        flex-direction: column;
+        z-index: 2;
+        top: 60px;
+        height: calc(100vh - 200px); */
+        margin-left: 0;
+        display: none;
+
+    }
+
+    .header-right {
+        /* display: none; */
+        /* flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: white;
+        border-top: 1px solid black; */
+        display: none;
+    }
+
+    .header-left {
+        /* margin-left: 10px; */
+        margin: 0px
+    }
+
+    .header-tabs.expanded  {
+        /* display: block; */
+        position: absolute;
+        /* margin: 20px auto; */
+        /* margin: 0px; */
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        top: 60px;
+        left: 0px;
+        height: calc(100vh - 200px);
+        /* background-color: blue; */
+        border-top: 2px solid var(--border-color);
+        background: var(--bg-color);
+    }
+
+    .header-right.expanded {
+        /* display: block; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        /* justify-content: flex-end; */
+        /* align-items: center; */
+        z-index: 2;
+        top: 60px;
+        left: 0;
+        /* width: 90%; */
+        height: calc(100vh - 80px);
+        /* background-color: white; */
+        background: var(--bg-color);
+        /* background-color: green; */
+    }
+
+    .collapsed {
+        display: none;
+    }
+
+
+
+
+  }

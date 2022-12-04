@@ -1,0 +1,172 @@
+
+.card {
+    /* width: 100%; */
+    /* height: 100%; */
+    min-width: 280px;
+    max-width: 280px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* background-color: green; */
+}
+
+.card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    flex: 0.5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* background-color: blue; */
+    transition: all 0.3s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.03);
+}
+
+.card-body {
+    /* width: 100%; */
+    /* height: 100%; */
+    flex: 0.5;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    /* align-items: flex-start; */
+}
+
+.card-info {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    /* align-items: center; */
+}
+
+.card-info div:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color-secondary);
+}
+
+.card-info div:first-of-type span {
+    color: rgb(161, 158, 158);
+    font-size: 10px;
+}
+
+.card-info div:nth-of-type(2) {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    /* background-color: chartreuse; */
+}
+
+.card-info div:nth-of-type(2) p {
+    font-size: 0.9rem;
+    color: goldenrod;
+    margin: 0;
+}
+
+.card-info div:nth-of-type(2) .rating-icon {
+    color: gold;
+}
+
+.card-info div:nth-of-type(3) {
+    cursor: pointer;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--bg-color-secondary);
+    border-radius: 50%;
+}
+
+.card-info div:nth-of-type(3) .like-icon {
+    font-weight: 500;
+    color: var(--text-color-secondary);
+}
+
+.card-info div:nth-of-type(3) .liked-icon {
+    color: red;
+}
+
+.card-title {
+    margin: 5px 0;
+}
+
+.card-title h4 {
+    font-size: 1.1rem;
+    color: var(--text-color-primary);
+    font-weight: 600;
+}
+
+.card-type {
+    font-size: 0.9rem;
+    color: var(--bg-color-secondary);
+    font-weight: 700;
+}
+
+.card-address {
+    margin: 8px 0;
+}
+
+.card-address h5 {
+    font-size: 12.5px;
+    color: rgb(195, 194, 202);
+    font-weight: 550;
+}
+
+.card-text {
+    /* background-color: brown; */
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bed-icon {
+    width: 23px !important;
+    height: 23px !important;
+    color: var(--text-color-secondary)
+}
+
+.bathroom-icon, .area-icon {
+    height: 20px !important;
+    width: 20px !important;
+    color: var(--text-color-secondary);
+}
+
+.beds, .bathrooms, .area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beds p, .bathrooms p, .area p {
+    color: rgb(195, 194, 202);
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+}
